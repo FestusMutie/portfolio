@@ -1,0 +1,27 @@
+{% load static %}
+<nav class="navbar navbar-expand-md navbar-default" style="font-family: 'Viaoda Libre', cursive; font-size:30px;background-color: cadetblue;">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'images/Festus.jpg' %}" alt=""width="100" height="100" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mx-auto" id="navid">
+                <li class="nav-item" id="nav1">
+                    <a class="nav-link" href="{% url 'index' %}">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="nav2">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item" id="nav3">
+                    <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+                </li>
+                <li class="nav-item" id="nav3">
+                    <a class="nav-link" href="{% url 'contacts' %}">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
